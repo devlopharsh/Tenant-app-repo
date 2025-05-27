@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/card'
+import { Card, CardHeader, CardTitle, CardContent } from '../Components/ui/card'
 import { Loader2 } from 'lucide-react'
-import { Button } from '../components/ui/button'
+import { Button } from '../Components/ui/button'
 import '../App.css'
 
 export default function Dashboard() {
