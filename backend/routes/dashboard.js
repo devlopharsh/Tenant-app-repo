@@ -1,7 +1,7 @@
 // routes/dashboard.js
 const express = require('express');
 const router = express.Router();
-const authMiddleware = require('../middleware/authMiddleware'); // your auth check middleware
+const authMiddleware = require('../Middleware/authMiddleware'); // your auth check middleware
 
 router.get('/', authMiddleware, (req, res) => {
   // Example response
