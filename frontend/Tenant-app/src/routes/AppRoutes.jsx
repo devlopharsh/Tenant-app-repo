@@ -6,7 +6,7 @@ import Dashboard from '../pages/Dashboard'
 import Tasks from '../pages/Task'
 import Invite from '../pages/Invite'
 import Home from '../pages/Home'
-import PrivateRoute from '../components/PrivateRoute'
+import PrivateRoute from '../Components/PrivateRoute'
 
 export default function AppRoutes() {
   return (
