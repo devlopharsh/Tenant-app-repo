@@ -25,6 +25,7 @@ const roleMiddleware = require('../Middleware/roleMiddleware');
 router.post('/', authMiddleware, roleMiddleware(['Admin']), inviteController.inviteUser);
 router.post('/accept/:token', inviteController.acceptInvite);
 
-
+ 
 module.exports = router;
 
+1

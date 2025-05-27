@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const auth = (roles = []) => {
+const authMiddleware = (roles = []) => {
   return (req, res, next) => {
     const token = req.header('Authorization')?.replace('Bearer ', '');
     if (!token) return res.status(401).json({ message: 'No token, authorization denied' });
@@ -20,4 +20,4 @@ const auth = (roles = []) => {
   };
 };
 
-module.exports = auth;
+module.exports = authMiddleware;
