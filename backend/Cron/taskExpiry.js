@@ -1,5 +1,5 @@
 const cron = require('node-cron');
-const Task = require('../models/Task');
+const Task = require('../Models/Task');
 
 const taskExpiryJob = () => {
   cron.schedule('0 * * * *', async () => {
